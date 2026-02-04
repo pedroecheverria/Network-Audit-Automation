@@ -1,5 +1,4 @@
 
-```markdown
 # NETWORK-CHANGE-ALERT (Oxidized + Gitea)
 
 Detects potentially risky network configuration changes captured by **Oxidized**, classifies them by severity (**LOW / MEDIUM / HIGH / CRITICAL**), and automatically creates **Gitea Issues** for HIGH/CRITICAL events.  
