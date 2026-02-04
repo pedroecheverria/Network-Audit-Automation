@@ -7,7 +7,6 @@ It also generates a **PDF incident report** (dashboard-style) that can be emaile
 > **Lab note:** This project was built and tested in a local lab environment (no Internet).  
 > The detection logic was validated **only for OpenWrt** (MikroTik skeleton exists but was not fully validated).
 
----
 
 ## Why this exists
 
@@ -21,7 +20,6 @@ Oxidized already provides versioned network configs (Git commits + diffs). This 
 2) **Create issues automatically**
 3) **Summarize incidents in a report**
 
----
 
 ## High-level flow
 
@@ -58,7 +56,7 @@ netchange_alert/
 core.py
 main.py
 rules/
-**init**.py
+init.py
 openwrt.py
 mikrotik.py
 
@@ -217,8 +215,8 @@ This repo includes **demo shortcuts** that should be replaced in production:
 
 One simple automation option is using **cron** (or systemd timers / CI runners, depending on the environment):
 
-- **Job 1 — Security watch (classification + issue creation):** run frequently to detect potentially risky changes quickly.
-- **Job 2 — Incident report (PDF + optional email):** run periodically (e.g., weekly / biweekly / monthly) to provide a management-level view of network hygiene and trends.
+- **Job 1 - Security watch (classification + issue creation):** run frequently to detect potentially risky changes quickly.
+- **Job 2 - Incident report (PDF + optional email):** run periodically (e.g., weekly / biweekly / monthly) to provide a management-level view of network hygiene and trends.
 
 ## Disclaimer / maturity level
 
